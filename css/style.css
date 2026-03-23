@@ -6,7 +6,7 @@
     }
     
     body{
-    background:#f4f4f4;
+    background:#0000;
     }
 
     
@@ -15,31 +15,32 @@
     justify-content:space-between;
     align-items:center;
     padding:20px;
-    background:white;
-    border-bottom:2px solid #ddd;
+    background: #000;
+    border-bottom:2px solid gold;
     }
     
     .logo{
-    width:120px;
+    width: 54px;
     height:40px;
-    background:#ddd;
+    background: #000;
     display:flex;
     align-items:center;
     justify-content:center;
-    }
-    
-    .menu a{
-    text-decoration:none;
-    color:black;
-    font-weight:bold;
     }
     
     .hamburger{
     font-size:24px;
     cursor:pointer;
     }
-    
-    
+
+    .undertext{
+        color: goldenrod;
+    }
+   
+    .text{
+        color: gold;
+    }
+
     .container{
     display:flex;
     height:80vh;
@@ -47,21 +48,21 @@
     
     .lokaler{
     width:70%;
-    background:#eaeaea;
+    background: #000;
     padding:20px;
     }
     
     .bilder{
     width:30%;
-    background:#d5d5d5;
+    background: #1e1a0e;
     padding:20px;
     }
     
     
     .footer{
     padding:20px;
-    background:white;
-    border-top:2px solid #ddd;
+    background:#000;
+    border-top:2px solid gold;
     }
     
     
