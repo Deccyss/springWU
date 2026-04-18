@@ -260,3 +260,88 @@ body {
     .nav-overlay { width: 100%; border-left: none; }
 }
 
+
+.booking-layout {
+    display: flex;
+    min-height: 80vh;
+}
+
+.booking-sidebar {
+    width: 20%;
+    background: #000;
+    border-right: 2px solid gold;
+    padding: 28px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.booking-grid {
+    width: 80%;
+    background: #0a0a0a;
+    padding: 28px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    align-content: start;
+}
+
+.booking-card {
+    background: #111;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 4px;
+    padding: 18px 16px;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.booking-card:hover {
+    border-color: gold;
+    background: #1a1500;
+}
+
+.booking-card-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.booking-number {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    color: gold;
+    line-height: 1;
+    min-width: 24px;
+}
+
+.booking-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.booking-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: goldenrod;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 450px) {
+    .booking-layout {
+        flex-direction: column;
+    }
+
+    .booking-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid gold;
+        padding: 20px 16px;
+    }
+
+    .booking-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 16px;
+    }
+}

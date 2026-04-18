@@ -3,16 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Midlife Burger Crisis</title>
+<title>Bokningar – Midlife Burger Crisis</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
 <div class="nav-backdrop" id="backdrop"></div>
-
 
 <div class="nav-overlay" id="navOverlay">
     <p class="nav-label">Navigera</p>
@@ -26,8 +24,6 @@
 </div>
 
 <header class="header">
-
-   
     <a class="logo" href="index.html">
         <img class="logo-icon" src="img/Midlife Burger Crisis.png" alt="Midlife Burger Crisis logga">
         <div class="logo-text">
@@ -35,26 +31,61 @@
             <span class="logo-sub">Est. 2024 &mdash; Göteborg</span>
         </div>
     </a>
-
-
     <div class="hamburger" id="hamburger" aria-label="Öppna meny" role="button" tabindex="0">
         <span></span>
         <span></span>
         <span></span>
     </div>
-
 </header>
 
-<main class="container">
-    <section class="lokaler">
-        <h2 class="text">Lokaler</h2>
-        <p class="undertext">Information om restaurangens lokaler.</p>
+<main class="booking-layout">
+
+ 
+    <aside class="booking-sidebar">
+        <h2 class="text">Bokningar</h2>
+        <p class="undertext">Hantera och se kommande bordsbokningar.</p>
+    </aside>
+
+   
+    <section class="booking-grid">
+        <div class="booking-card">
+            <div class="booking-card-inner">
+                <span class="booking-number">1</span>
+                <div class="booking-info">
+                    <p class="booking-title">Tid: 18:00–20:00</p>
+                    <p class="undertext">Sektionspersoner: 4 &nbsp;|&nbsp; Bord: 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="booking-card">
+            <div class="booking-card-inner">
+                <span class="booking-number">2</span>
+                <div class="booking-info">
+                    <p class="booking-title">Tid: 20:00–22:00</p>
+                    <p class="undertext">Sektionspersoner: 2 &nbsp;|&nbsp; Bord: 1</p>
+                </div>
+            </div>
+        </div>
+        <div class="booking-card">
+            <div class="booking-card-inner">
+                <span class="booking-number">3</span>
+                <div class="booking-info">
+                    <p class="booking-title">Tid: 17:30–19:30</p>
+                    <p class="undertext">Sektionspersoner: 6 &nbsp;|&nbsp; Bord: 3</p>
+                </div>
+            </div>
+        </div>
+        <div class="booking-card">
+            <div class="booking-card-inner">
+                <span class="booking-number">4</span>
+                <div class="booking-info">
+                    <p class="booking-title">Tid: 19:00–21:00</p>
+                    <p class="undertext">Sektionspersoner: 5 &nbsp;|&nbsp; Bord: 2</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <aside class="bilder">
-        <h2 class="text">Bilder / Aside</h2>
-        <p class="undertext">Bilder eller annan info.</p>
-    </aside>
 </main>
 
 <footer class="footer">
@@ -75,11 +106,9 @@
 
     hamburger.addEventListener('click', toggleMenu);
     backdrop.addEventListener('click', toggleMenu);
-
     document.addEventListener('keydown', e => {
         if (e.key === 'Escape' && navOverlay.classList.contains('open')) toggleMenu();
     });
 </script>
-<script src="js/script.js" ></script>
 </body>
 </html>
