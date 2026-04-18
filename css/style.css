@@ -576,3 +576,28 @@ body {
         min-height: 200px;
     }
 }
+
+.bilder {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    width: 30%;
+    background: #1e1a0e;
+}
+
+.lokal-bild-wrapper {
+    width: 100%;
+    flex: 1;
+    min-height: 150px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 4px;
+}
+
+.lokal-bild {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
